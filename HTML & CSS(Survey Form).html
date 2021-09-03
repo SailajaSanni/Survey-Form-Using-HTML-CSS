@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+<head>
+<title>Survey form</title>
+<style>
+	body{
+		background-color:SkyBlue;
+		margin:100px 250px;
+		font-family: 'Space Grotesk', sans-serif;
+		}
+	h2{
+		font-size:30px;
+	}
+	p{
+		font-weight:bold;
+		}
+	
+	
+	input[type="text"]{
+		border-left: 0px;
+		border-right: 0px;
+		border-top: 0px;
+		padding: 20px 60px 0px 0px;
+		color:blue;
+		font-size:15px;
+			}
+	
+	.django{
+		background-color:white;
+		border-radius:15px;
+		padding:20px 40px;
+		margin:20px 0px;
+			}
+	
+	#submitbutton{
+		background-color:white;
+		border-radius:25px;
+		padding:15px 70px;
+		margin:0px 20px 10px 0px;
+			}
+	
+	label{
+		line-height: 2;
+		}
+		
+		/* -- Desktop mode 1250 & below--*/
+	@media only screen and (max-width:1250px) {
+		body{
+			margin: 100px 50px;
+		}
+    }
+	/* -- Tablet mode -- */
+	@media only screen and (max-width:800px) {
+		body{
+			margin: 100px 50px;
+		}
+   }
+	/* -- Mobile mode -- */
+	@media only screen and (max-width:600px){
+		body{
+			margin: 50px 20px;
+		}
+    
+		button{
+        margin: 30px 0px 0px 15%;
+		}
+	}
+	@media only screen and (max-width:400px){
+		body{
+			width: 290px;
+		}
+	}
+		
+			
+</style>				
+</head>
+<body>
+<form method="post">
+	<div class="django">
+		<h2>Textile & Handloom</h2>
+		<p>This is a survey to collect data on how many people have knowledge about textile and handloom industry.</p>
+		
+	</div>
+	<div class="django">
+		<p>Is handloom important for India?</p>
+		<div>
+			<input type="radio" name="rQ1" value="yes"/>
+			<label for="yes">Yes</label></br>
+			<input type="radio" name="rQ1" value="no"/>
+			<label for="no">No</label></br>
+			<input type="radio" name="rQ1" value="maybe"/>
+			
+			
+			<label for="maybe">Maybe</label>
+		</div>
+	</div>		
+	<div class="django">
+		<p>The strength of Handloom lies in introducing innovative designs? </p>
+		<div>
+			<input type="radio" name="rQ2"/>
+			<label for="yes">Yes</label></br>
+			<input type="radio" name="rQ2"/>
+			<label for="no">No</label></br>
+			<input type="radio" name="rQ2"/>
+			<label for="maybe">Maybe</label>
+		</div>
+	</div>		
+	
+	<div class="django">
+		<p>Do you think Power loom sector can replicate designs of Handloom industry?  </p>
+		<div>
+			<input type="radio" name="rQ3" value="yes"/>
+			<label for="yes">Yes</label></br>
+			<input type="radio" name="rQ3" value="no"/>
+			<label for="no">No</label></br>
+			<input type="radio" name="rQ3" value="maybe" />
+			<label for="rQ3maybe">Maybe</label>
+		</div>
+	</div>		
+	<div class="django">
+		<p>Do you know about the schemes and programmes launched by the government for handloom weavers?</p>
+		<div>
+			<input type="radio" name="rQ4" value="yes"/>
+			<label for="yes">Yes</label></br>
+			<input type="radio" name="rQ4" value="no"/>
+			<label for="no">No</label></br>
+			<input type="radio" name="rQ4" value="maybe"/>
+			<label for="maybe">Maybe</label>
+		</div>
+	</div>		
+	<div class="django">
+		<p>Will you buy from ecofriendly clothing brands or brands which harm the environment?  </p>
+		<div>
+			<input type="text" name="txt" placeholder="Your answer">
+		</div>
+		
+	</div>
+	
+	<div>
+		<button name="st" id="submitbutton">Submit</button>
+	</div>
+		
+</form>	
+</body>
+</html>
+			
+	
